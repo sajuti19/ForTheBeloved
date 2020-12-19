@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    font-family: comic;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "comic";
+    src: url(../asset/ComicNeue-Regular.ttf);
+}
+.one{
+    width: 20vw;
+    margin: 100px auto;
+    background-color: #9ab3e5;
+    animation-name: colorful;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size: 2vw;
+    text-align: center;
+    box-shadow: 5px 5px 3px #666666;
+    border-radius: 10px;
+    border: 2px solid #1a1a1a;
+    
+    
+}
+.one:active{
+    box-shadow: 0px 0px 0px #666666;
+    margin-top: 103px;
+}
+#two{
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: none;
+}
+img{
+    width: 35%;
+    display: block;
+    margin: 50px auto;
+    border: 2px solid #101f3d;
+}
+p{
+    display: block;
+    margin: 20px auto;
+    font-size: 150%;
+    background-color: white;
+    width: 10%;
+    text-align: center;
+    border: 2px solid #101f3d;
+    border-radius: 7px;
+}
+p:active{
+    background-color: #9ab3e5;
+}
+@keyframes colorful {
+    /* 28%{ background-color: #5d85d5} */
+    30%{ background-color: #9ab3e5}
+    100%{ background-color: #d6e0f5}
+}
+@media screen and (max-width:800px){
+    .one{
+        width: 50vw;
+        font-size: 8vw;
+    }
+    img{
+        width: 60vw;
+        display: block;
+    }
+    p{
+        width: 15vw;
+        font-size: 6vw;
+    }
+    
+}
